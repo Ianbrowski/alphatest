@@ -255,7 +255,7 @@
     }
 
     .moneyback{
-    height: 700px;
+    height: 1200px;
     }
     .moneyback h2{
         color: white;
@@ -330,7 +330,7 @@
             background-color: white;
             color:black;
           
-            height:200px;
+            height:500px;
             margin: 10px auto;
         }
        .accordion-header{
@@ -373,6 +373,10 @@
         margin: 50px px; /* Increased margin for sections */
 
     }
+    .header{
+      width: 100%;
+    }
+
     hr{
         max-width: 100%;
     }
@@ -405,8 +409,8 @@
     
     border-radius: 30px;
     background-color: black ;
-    width: 500px;
-    height: 20px;
+    overflow: auto;
+    
     margin:10px auto;
     }
 
@@ -423,8 +427,40 @@
     }
     .money-back {
       margin: auto;
-      height: 1000px;
+      height: 1200px;
     }
+           .accordion-content {
+            display: none;
+            transition: 1.5s ease-in-out; 
+        }
+        .active .accordion-content {
+            display: block;
+            background-color: white;
+            color:black;
+            font-size: 10px;
+            height:500px;
+            margin: 10px auto;
+            height: auto;
+        }
+       .accordion-header{
+    display: block;
+    background-color: grey;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 10px auto;
+    height: 100px;
+    width: 100%;      
+     }
+     .accordion-header:hover{
+      background-color: #FFD700;
+      color:white;
+      text-shadow: 1px 1px black;
+
+     }
+     .slots{
+      height: auto;
+     }
 
     .buy-text {
         margin: 50px 0;
@@ -500,7 +536,12 @@
         padding: 20px 35px; /* Adjust padding */
         font-size: 18px; /* Adjust font size */
     }
+    .slots p {
+    margin: auto;
+    overflow: auto;
+    text-align: center;
 
+}
     /* Adjust footer styles for mobile */
     footer {
         padding: 10px; /* Decrease padding */
